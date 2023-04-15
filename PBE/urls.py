@@ -15,7 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+from PBE import views
+
+def otro(request):
+    return HttpResponse('otro')
+def otraView(request):
+    return HttpResponse('Holaa')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('testing/',views.testing),
+    path('otro/',views.otro),
+    path('otraview/',views.otraview),
+
 ]
