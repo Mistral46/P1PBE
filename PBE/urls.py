@@ -25,8 +25,6 @@ def otraView(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('testing/',views.testing),
-    path('otro/',views.otro),
-    path('otraview/',views.otraview),
+  
 
 ]
